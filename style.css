@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@font-face {
+    font-family: Al;
+    src :url(Alcubierre.otf);
+    src: local("Al"), local("Al"), url(Alcubierre.otf) format('opentype');
+}
 /*
 .html {
     display:grid;
@@ -9,7 +15,11 @@
 }
 */  
 
+/* Day Mode font #222
+    Background #10101010
 
+   Night mode font #CCCCCCC
+   Background #333333*/
 .self-image {
     border-radius: 100%;
     height: 400px;
@@ -17,9 +27,9 @@
 }
 
 .comp {
-    color: #CCCCCC;
-    background: #333333;
-    font-family: "Montserrat", sans-serif;
+    color: #222;
+    background: #10101010;
+    font-family: "montserrat", sans-serif;
 }
 
 .sub_container {
@@ -34,6 +44,8 @@
 
 .item_1_head {
     grid-column: 2;
+    font-family: Al;
+    font-size:400%
 }
 
 .item_1_edu {
