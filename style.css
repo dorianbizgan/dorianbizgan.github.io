@@ -56,10 +56,36 @@
     */
 }
 
+.coffee_title {
+    display:grid;
+    grid-template-areas: 
+        "coffee_title"
+        " . coffee_content coffee_content";
+}
+
+.coffee_container {
+    display:grid;
+    grid-template-areas:
+        "h2  "
+        ". coffee_block"
+        ". coffee_block";
+}
+
+.coffee_content {
+    margin-left: 4%;
+}
+
+.h2_coffee {
+    margin: 1%;
+}
+
+.coffee_block {
+    margin-left: 4%;
+}
 
 .item_1 {
     grid-column: 1/1;
-    border-left-color: #CCCCCC
+    border-left-color: #CCCCCC;
 }
 
 .item_2 {
