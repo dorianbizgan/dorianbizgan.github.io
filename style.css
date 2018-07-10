@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@import url('https://fonts.googleapis.com/css?family=Monoton');
 @font-face {
     font-family: Al;
     src :url(Alcubierre.otf);
@@ -11,6 +11,29 @@ html {
     margin:auto;
     max-width: 60%;
     min-width: 40%;
+    
+    background: linear-gradient(210deg, #b885b7, #5691ff, #6bc2b5, #e55752);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 23s ease infinite;
+    -moz-animation: AnimationName 23s ease infinite;
+    animation: AnimationName 23s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 90%}
+        50%{background-position:100% 11%}
+        100%{background-position:0% 90%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 90%}
+        50%{background-position:100% 11%}
+        100%{background-position:0% 90%}
+    }
+    @keyframes AnimationName { 
+        0%{background-position:0% 90%}
+        50%{background-position:100% 11%}
+        100%{background-position:0% 90%}
+    }
 }
 
 
@@ -26,24 +49,29 @@ html {
 }
 
 .comp {
-    color: #222;
-    background: #10101010;
-    font-family: "montserrat", sans-serif;
+    color: #CCCCCCCC;
+    /*background: #10101010;*/
+    font-family: "Montserrat", sans-serif;
 }
 
 .sub_container {
     display:grid;
+    margin-top: 2%;
+    margin-bottom: 2%;
+   
 }
 
 .header {
     display:grid;
     align-items: center;
+    margin-bottom: 10%;
     
 }
 
 .item_1_head {
     grid-column: 2;
-    font-family: Al;
+    font-family: Monoton;
+    font-weight: 100;
     font-size:400%
 }
 
