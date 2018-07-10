@@ -1,39 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Monoton');
-@font-face {
-    font-family: Al;
-    src :url(Alcubierre.otf);
-    src: local("Al"), local("Al"), url(Alcubierre.otf) format('opentype');
+@-webkit-keyframes dynBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes dynBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes dynBackground { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 html {
     display:grid;
-    margin:auto;
-    max-width: 60%;
+    max-width: 70%;
     min-width: 40%;
+    padding-left: 15%;
+    padding-right: 15%;
     
-    background: linear-gradient(210deg, #b885b7, #5691ff, #6bc2b5, #e55752);
-    background-size: 800% 800%;
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    -webkit-animation: AnimationName 23s ease infinite;
-    -moz-animation: AnimationName 23s ease infinite;
-    animation: AnimationName 23s ease infinite;
 
-    @-webkit-keyframes AnimationName {
-        0%{background-position:0% 90%}
-        50%{background-position:100% 11%}
-        100%{background-position:0% 90%}
-    }
-    @-moz-keyframes AnimationName {
-        0%{background-position:0% 90%}
-        50%{background-position:100% 11%}
-        100%{background-position:0% 90%}
-    }
-    @keyframes AnimationName { 
-        0%{background-position:0% 90%}
-        50%{background-position:100% 11%}
-        100%{background-position:0% 90%}
-    }
+
+
+    background-size: 600% 600%;
+    -webkit-animation: dynBackground 30s ease infinite;
+    -moz-animation: dynBackground 30s ease infinite;
+    animation: dynBackground 30s ease infinite;
+
 }
 
 
@@ -111,7 +112,7 @@ html {
 }
 
 .coffee_content {
-    margin-left: 4%;
+    margin-left: 2%;
 }
 
 .h2_coffee {
@@ -140,4 +141,8 @@ html {
 }
 .item_5 {
     grid-column:5/5;
+}
+
+.body {
+    margin:auto;
 }
