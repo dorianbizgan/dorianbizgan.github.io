@@ -5,15 +5,14 @@
     src :url(Alcubierre.otf);
     src: local("Al"), local("Al"), url(Alcubierre.otf) format('opentype');
 }
-/*
-.html {
+
+html {
     display:grid;
-    grid-template-columns: 40% 60%;
-    background: #333333;
-    color: #CCCCCC;
-    font-family: 'Montserrat', sans-serif;
+    margin:auto;
+    max-width: 60%;
+    min-width: 40%;
 }
-*/  
+
 
 /* Day Mode font #222
     Background #10101010
