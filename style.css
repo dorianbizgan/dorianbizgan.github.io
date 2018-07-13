@@ -18,14 +18,12 @@
 
 html {
     display:grid;
-    max-width: 70%;
+    max-width: 100%;
     min-width: 40%;
-    padding-left: 15%;
-    padding-right: 15%;
     
-    background: #ee0979;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    //background: #ee0979;  /* fallback for old browsers */
+    //background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    //background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 
@@ -63,14 +61,27 @@ html {
 }
 
 .header {
-    display:grid;
-    align-items: center;
-    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas: 
+        " . "
+        " item_1_head"
+        " . ";
+    height: 700px;
+    width: 100%;
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6561a7, #b268c0, #77cbd2, #e19e6c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6561a7, #b268c0, #77cbd2, #e19e6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    background-size: 600% 600%;
+    -webkit-animation: dynBackground 30s ease infinite;
+    -moz-animation: dynBackground 30s ease infinite;
+    animation: dynBackground 30s ease infinite;
+
     
 }
 
 .item_1_head {
-    grid-column: 2;
     font-family: Monoton;
     font-weight: 100;
     font-size:400%
@@ -144,5 +155,7 @@ html {
 }
 
 .body {
-    margin:auto;
+    padding-left:20%;
+    padding-right:20%;
+    color: #222;
 }
