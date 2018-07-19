@@ -90,6 +90,7 @@ header p {
 body {
     display:grid;
     grid-area:"body"; 
+    line-height: 150%;
     
 }
 
@@ -98,7 +99,8 @@ body {
 }
 
 .body-content {
-    padding-right:30%;
+    padding-right:11%;
+
 }
 title {
     grid-area:"title";
