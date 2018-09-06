@@ -31,7 +31,7 @@ main {
     grid-template-areas: 
         "header header header header header"
         "nav    body   body    body    body"
-        ".      .      footer  .          .";
+        "footer footer footer footer footer";
     
    
     
@@ -125,15 +125,13 @@ title {
 }
 
 .nav a {
-    color:darkblue;
+    color:darkslategray;
+    text-decoration: none;
 }
 
-
-
-footer {
-    display:flex;
-    align-content: center;
-    justify-content: center;
-    padding-bottom: 1%;
+.footer {
     text-align: center;
+    padding-left:-25%;
+    padding-right:5%;
+    padding-bottom: 1%;
 }
