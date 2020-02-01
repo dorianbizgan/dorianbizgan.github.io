@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@-webkit-keyframes dynBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes dynBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes dynBackground { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+html {
+    font-family: "Montserrat";
+     
+}
+
+main {
+    display:grid;
+    width:100%;
+    
+    grid-template-columns: 1fr, repeat(1fr);
+    grid-template-rows: 150vh auto 50px;
+    grid-template-areas: 
+        "header header header header header"
+        "nav    body   body    body    body"
+        "footer footer footer footer footer";
+    
+   
+    
+}
+header {
+    
+    /*====== Styling =======*/
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6561a7, #b268c0, #77cbd2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6561a7, #b268c0, #77cbd2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    background-size: 600% 600%;
+    -webkit-animation: dynBackground 30s ease infinite;
+    -moz-animation: dynBackground 30s ease infinite;
+    animation: dynBackground 30s ease infinite;
+    border-radius: 4px;
+    color:white;
+    
+    
+    /* ===== Grid Specifications ======*/
+    grid-area:"header";
+    font-family:"Montserrat";
+    font-weight: 100;
+    height: 100vh;
+    
+    /*Padding for aligning text vertically*/
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+    margin-bottom: 5%;
+    
+    align-content: center;
+    text-align: center;
+
+
+}
+
+header h1 {
+    font-family:"Montserrat";
+    font-size:900%;
+    font-weight:300;
+    margin-bottom: -5%;;
+    text-align: center;
+    padding-bottom: 10%;
+    line-height: 95%;
+    
+}
+
+header p {
+    font-size:400%;
+    line-height: 94%
+}
+
+body {
+    display:grid;
+    grid-area:"body"; 
+    line-height: 150%;
+    
+}
+
+.body-title {
+    padding-top:10%;
+}
+
+.body-content {
+    padding-right:11%;
+
+}
+title {
+    grid-area:"title";
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav {
+    grid-area:"nav";
+    display:grid;
+    height:500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    text-align: left;
+    padding-top:100%;
+    padding-left:10%;
+    padding-right:45%;
+    
+    /* === Text Styling === */
+    font-weight: 600;
+    
+}
+
+.nav a {
+    color:darkslategray;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    padding-left:-25%;
+    padding-right:5%;
+    padding-bottom: 1%;
+}
