@@ -41,7 +41,7 @@ a, a:visited {
 }
 
 a:hover {
-    color:salmon;
+    color:magenta;
     text-decoration: none;
 }
 
@@ -62,5 +62,14 @@ h2 {
 
 .footer {
     padding-bottom: 3vh;
+    justify-content: center;
+    align-content: center;
 }
 
+strong {
+    color: deeppink;
+}
+
+.right-align {
+    text-align: right;
+}
