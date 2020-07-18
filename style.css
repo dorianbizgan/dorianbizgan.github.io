@@ -43,11 +43,10 @@ body { color:#35b2ff;
 }
 
 a, a:visited {
-    color:deeppink;
+    color:steelblue;
     text-decoration: none;
     
 }
-
 a:hover {
     color:magenta;
     text-decoration: none;
