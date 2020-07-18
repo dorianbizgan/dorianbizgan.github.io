@@ -15,7 +15,7 @@ body { color:#35b2ff;
     font-size: 120%}
 
 .medium-image { 
-    max-height: 100vw;
+    max-height: 75vw;
     max-width:  50vh;
     display:flex;
     align-items: center;
