@@ -22,6 +22,14 @@ body { color:#35b2ff;
     justify-content: center;
     
 }
+.small-image {
+    max-height: 50vw;
+    max-width:  50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
     
 
 .header {
@@ -67,9 +75,13 @@ h2 {
 }
 
 strong {
-    color: deeppink;
+    color: mediumpurple;
 }
 
-.right-align {
-    text-align: right;
+.center-align {
+    text-align: center;
+}
+
+.center-object {
+    align-content: center;
 }
