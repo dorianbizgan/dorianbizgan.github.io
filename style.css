@@ -43,7 +43,7 @@ body { color:#35b2ff;
 }
 
 a, a:visited {
-    color:steelblue;
+    color:darkcyan;
     text-decoration: none;
     
 }
@@ -68,7 +68,8 @@ h2 {
 }
 
 .footer {
-    padding-bottom: 3vh;
+    margin-top: 5vh;
+    margin-bottom:2vh;
     justify-content: center;
     align-content: center;
 }
