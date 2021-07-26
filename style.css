@@ -5,7 +5,7 @@ html {
 }
 
 body { color:#35b2ff;
-       font-family:"Montserrat";
+       font-family:"Montserrat", Helvetica;
        text-align: left;
        margin-left:5%;
 }
